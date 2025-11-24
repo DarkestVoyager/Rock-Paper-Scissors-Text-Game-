@@ -21,7 +21,7 @@ int main(){
 
     std::cout << "Welcome to Rock-Paper-Scissor!\n";
 
-    while (_playing){
+    while (_playing){ 
         
         while (true) { // Input validation loop
             std::cout << "Enter rock, paper, or scissors: \n";
@@ -79,7 +79,7 @@ std::string who_Wins(const std::string& player, const std::string& computer){
     return "You Lose!";
 }
 
-void overall_Winner(unsigned short x, unsigned short y){
+void overall_Winner(unsigned short x, unsigned short y){ // outputs the overall winner
     if(x == y) std::cout << "Overall, it's a tie.";
     else std::cout << ((x > y) ? "Overall Winner is You!" : "Overall Winner is the Computer.") ;
 }
